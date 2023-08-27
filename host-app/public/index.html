@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Host App</title>
+    <style>
+      .app-frame {
+        width: 100%;
+        height: 500px;
+        border: 1px solid #ccc;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bienvenido a la Host App</h1>
+    <div class="app-frame">
+      <iframe
+        src="http://localhost:3001/"
+        onerror="handleError('angularAppAlquiler')"
+      ></iframe>
+    </div>
+    <div class="app-frame">
+      <iframe
+        src="http://localhost:3002/"
+        onerror="handleError('angularAppVentas')"
+      ></iframe>
+    </div>
+    <script src="./main.js"></script>
+    <script>
+      function handleError(appName) {
+        const iframe = document.querySelector(`[src='http://localhost:3001/']`);
+        iframe.style.display = "none"; // Oculta el iframe que falló
+        const errorMessage = document.createElement("p");
+        errorMessage.innerText = `La aplicación ${appName} no está disponible en este momento.`;
+        iframe.parentNode.appendChild(errorMessage);
+      }
+    </script>
+  </body>
+</html>
