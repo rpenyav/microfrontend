@@ -1,3 +1,7 @@
+
+Para documentación exhaustiva, por favor visite: https://rafapenya.gitbook.io/documentacion-de-proyecto-de-microfrontends/
+
+
 # Documentación del Proyecto de Microfrontends
 
 ## Introducción
