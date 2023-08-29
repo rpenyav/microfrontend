@@ -1,0 +1,37 @@
+<div class="feature2">
+  <div class="feature2-header"><b>Feature 2 Page</b></div>
+  <div>
+    <table cdk-table [dataSource]="dataSource">
+      <ng-container cdkColumnDef="dataPoint1">
+        <th cdk-header-cell *cdkHeaderCellDef> Data Point 1 </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.dataPoint1}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="dataPoint2">
+        <th cdk-header-cell *cdkHeaderCellDef> Data Point 2 </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.dataPoint2}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="dataPoint3">
+        <th cdk-header-cell *cdkHeaderCellDef> Data Point 3 </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.dataPoint3}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="dataPoint4">
+        <th cdk-header-cell *cdkHeaderCellDef> Data Point 4 </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.dataPoint4}} </td>
+      </ng-container>
+
+      <ng-container cdkColumnDef="dataPoint5">
+        <th cdk-header-cell *cdkHeaderCellDef> Data Point 5 </th>
+        <td cdk-cell *cdkCellDef="let element"> {{element.dataPoint5}} </td>
+      </ng-container>
+
+      <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+      <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  <div>
+    <button mat-button (click)="onMessageButtonClick()">Send Message To Feature 1</button>
+  </div>
+</div>

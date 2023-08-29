@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SampleAppShell</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="mat-typography">
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@angular/core": "app:@angular/core",
+          "@angular/common": "app:@angular/common",
+          "@angular/common/http": "app:@angular/common/http",
+          "@angular/cdk/collections": "app:@angular/cdk/collections",
+          "@angular/cdk/table": "app:@angular/cdk/table",
+          "@angular/cdk/overlay": "app:@angular/cdk/overlay",
+          "cross-cutting-concern": "app:cross-cutting-concern",
+          "rxjs": "app:rxjs",
+          "rxjs/operators": "app:rxjs/operators"
+        }
+      }
+    </script>
+    <app-root></app-root>
+  </body>
+</html>

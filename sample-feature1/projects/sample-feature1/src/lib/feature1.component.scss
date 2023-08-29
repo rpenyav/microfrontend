@@ -1,0 +1,19 @@
+.feature1 {
+  padding: 20px;
+  .feature1-header {
+    margin-bottom: 30px;
+    background-color: aliceblue;
+  }
+  .cdk-table {
+    width: 70%;
+    .cdk-header-row {
+      background-color: aliceblue;
+    }
+    .cdk-row {
+      background-color: beige;
+    }
+    .cdk-cell {
+      text-align: center;
+    }
+  }
+}
